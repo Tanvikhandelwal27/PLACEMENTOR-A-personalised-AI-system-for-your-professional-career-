@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 style="font-family: sans-serif;">PLACEMENTOR</h1>
+    </header>
+
+    <main>
+        <section class="profile-form">
+            <h2>Enter Your Profile</h2>
+            <form id="profileForm">
+                <label for="interests">Interests:</label>
+                <input type="text" id="interests" name="interests" placeholder="e.g., Data Science, AI" required>
+
+                <label for="skills">Skills:</label>
+                <input type="text" id="skills" name="skills" placeholder="e.g., Python, Machine Learning" required>
+
+                <label for="education">Education:</label>
+                <input type="text" id="education" name="education" placeholder="e.g., BSc in Computer Science" required>
+
+                <button type="submit">Get Recommendations</button>
+            </form>
+        </section>
+
+        <section class="dashboard" id="dashboard" style="display: none;">
+            <h2>Your Career Recommendations</h2>
+            <div id="recommendations"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Powered by AI Career Guidance</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Full-Screen Background */
+body {
+    background: linear-gradient(135deg, #a8dadc 0%, #457b9d 100%); /* Soft blue-green gradient */
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333; /* Darker text for better contrast */
+    padding: 20px;
+    position: relative;
+}
+
+/* Overlay for better contrast */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.6); /* Light white overlay */
+    z-index: 0;
+}
+
+/* Header */
+header {
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px 40px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Section */
+main {
+    z-index: 1;
+    padding: 20px;
+    max-width: 800px;
+    width: 100%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.9); /* Light background for form */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Form */
+.profile-form {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #f1faee; /* Soft off-white */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.profile-form h2 {
+    margin-bottom: 15px;
+    color: #1d3557; /* Dark blue for better readability */
+    text-align: center;
+}
+
+.profile-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #457b9d;
+}
+
+.profile-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #a8dadc;
+    border-radius: 4px;
+    transition: border 0.3s;
+    font-size: 16px;
+}
+
+.profile-form input:focus {
+    border-color: #1d3557;
+    outline: none;
+    background-color: #e0fbfc; /* Light highlight on focus */
+}
+
+.profile-form button {
+    background-color: #457b9d; /* Soothing blue */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.profile-form button:hover {
+    background-color: #1d3557;
+}
+
+/* Dashboard */
+.dashboard {
+    padding: 20px;
+    background-color: #f1faee;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.dashboard h2 {
+    color: #1d3557;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.recommendation {
+    background-color: #e0fbfc;
+    padding: 15px;
+    border-left: 4px solid #457b9d;
+    margin: 10px 0;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+}
